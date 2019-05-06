@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/vp_main"
+        tools:context=".MainActivity">
+
+
+    </android.support.v4.view.ViewPager>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#aaaaaa"/>
+
+    <LinearLayout
+
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:background="#eeeeee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.example.imooc_wechat_app.view.TabView
+            android:id="@+id/tab_wechat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="微信"/>
+
+        <com.example.imooc_wechat_app.view.TabView
+            android:id="@+id/tab_friend"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="通讯录"/>
+
+        <com.example.imooc_wechat_app.view.TabView
+            android:id="@+id/tab_find"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="发现"/>
+
+        <com.example.imooc_wechat_app.view.TabView
+            android:id="@+id/tab_mine"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="我"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
